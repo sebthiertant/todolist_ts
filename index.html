@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="bloc_container">
+            <div class="input_container">
+                <form id="send-form">
+                    <input type="text" class="task_input" placeholder="What needs to be done ?" min="1" max="30" required>
+                    <button type="submit" class="input_button button">Valider</button>
+                </form>
+                <form id="search-form">
+                    <input type="text" class="search_input" placeholder="🔎" min="1" max="30">
+                    <button type="submit" class="research_button button">Rechercher</button>
+                </form>
+            </div>
+        </section>
+        <section class="task_functions_list">
+            <div class="items_left">0 item left</div>
+            <ul>
+                <li class="all_button button">All</li>
+                <li class="active_button button">Active</li>
+                <li class="completed_button button">Completed</li>
+            </ul>
+            <div class="task_clear button">Clear all</div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
